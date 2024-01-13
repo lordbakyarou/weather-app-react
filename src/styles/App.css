@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.weather {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+
+  background-image: url("https://images.unsplash.com/photo-1558486012-817176f84c6d?q=80&w=1804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  /* You can also set additional background properties, such as size, position, and repeat if needed */
+  background-size: cover; /* Adjusts the background image size to cover the entire body */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat;
+}
+
+.weather-data {
+  width: 300px;
+  height: 70vh;
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 30px;
+  background: linear-gradient(
+    144deg,
+    rgba(255, 255, 255, 0.11) 0%,
+    rgba(255, 255, 255, 0.22) 100%
+  );
+
+  filter: blur(0px);
+  backdrop-filter: blur(25px);
+
+  border: 8px solid #202022;
+}
+
+.weather-data form input {
+  margin-top: -1px;
+  height: 35px;
+  width: 170px;
+  position: relative;
+  padding: 0px 16px;
+  left: 10px;
+  align-items: center;
+  border-radius: 0px 0px 15px 15px;
+  background-color: #202022;
+  border: none;
+  outline: none;
+  color: white;
+  z-index: 10;
+}
+
+.weather-actual-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* width: 566.001px;*/
+  height: 68vh;
+  flex-shrink: 0;
+}
+
+.cityname {
+  /* width: 180px;
+  height: 45px; */
+  flex-shrink: 0;
+
+  color: #fff;
+
+  font-family: Sarabun;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.temp {
+  /* width: 215px;
+  height: 135px; */
+  flex-shrink: 0;
+
+  color: #fff;
+
+  text-align: center;
+  font-family: Sarabun;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* .status {
+  width: fit-content;
+  flex-shrink: 0;
+
+  color: #fff;
+  text-align: center;
+  font-family: Sarabun;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+} */
+
+.image {
+  width: 150px;
+  margin-top: 0;
+}
